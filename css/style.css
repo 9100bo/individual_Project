@@ -1,0 +1,214 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #cccccc;
+  padding: 5px 15px;
+  background-color: white;
+  height: 70px;
+}
+
+header h1 {
+  margin-right: auto;
+  padding: 0;
+}
+
+header h1 a {
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header h1 a img {
+  height: 50px;
+  margin-top: 7px;
+}
+
+.custom-navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-navbar li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  vertical-align: middle;
+}
+
+.custom-navbar li a {
+  display: block;
+  font-size: 17px;
+  color: grey;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.custom-navbar li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu-icon {
+  display: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  background-color: black;
+}
+
+.menu-icon:focus {
+  outline: none;
+}
+
+.menu-icon span {
+  color: black;
+  font-size: 20px;
+}
+
+.ripple-wave {
+  position: relative;
+  -webkit-transition: background-color .6s ease;
+  transition: background-color .6s ease;
+  overflow: hidden;
+}
+
+.ripple-wave:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  -webkit-transition: width .3s ease, height .3s ease;
+  transition: width .3s ease, height .3s ease;
+}
+
+.ripple-wave:focus, .ripple-wave:hover {
+  background: #fb512e;
+}
+
+.ripple-wave:active:after {
+  width: 200px;
+  height: 200px;
+}
+
+@media (min-width: 481px) and (max-width: 761px) {
+  header {
+    position: relative;
+  }
+  header h1 {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    position: relative;
+  }
+  .custom-navbar {
+    opacity: 0;
+    position: fixed;
+    z-index: 2;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    width: 100%;
+    background-color: white;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .custom-navbar.open {
+    opacity: 1;
+    right: 0;
+  }
+  .custom-navbar li {
+    display: block;
+  }
+  .custom-navbar li a {
+    text-align: left;
+    border: 1px solid white;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#banner {
+  margin: 50px 0;
+}
+/*# sourceMappingURL=style.css.map */
