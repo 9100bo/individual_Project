@@ -23,6 +23,10 @@ header {
   padding: 5px 15px;
   background-color: white;
   height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 header h1 {
@@ -179,7 +183,6 @@ body {
 }
 
 body {
-  background: #1a1a1a;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
