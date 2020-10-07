@@ -179,7 +179,7 @@ body {
 }
 
 body {
-  background: #eee;
+  background: #1a1a1a;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
@@ -206,9 +206,5 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-#banner {
-  margin: 50px 0;
 }
 /*# sourceMappingURL=style.css.map */
