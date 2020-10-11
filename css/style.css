@@ -119,7 +119,7 @@ header h1 a img {
 }
 
 .ripple-wave:focus, .ripple-wave:hover {
-  background: #fb512e;
+  background: #ededed;
 }
 
 .ripple-wave:active:after {
@@ -142,7 +142,7 @@ header h1 a img {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1145px) {
   header {
     position: relative;
   }
@@ -209,5 +209,29 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+#concept {
+  width: 100%;
+  min-height: 300px;
+  background-color: aquamarine;
+  padding: 50px 50px;
+  position: relative;
+}
+
+.concept_wrap {
+  margin-top: 40px;
+}
+
+.button {
+  text-decoration: underline;
+  text-align: center;
+}
+
+#news {
+  width: 100%;
+  min-height: 300px;
+  background-color: teal;
+  padding: 50px 50px;
 }
 /*# sourceMappingURL=style.css.map */

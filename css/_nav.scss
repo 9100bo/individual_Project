@@ -109,7 +109,7 @@ header {
   }
   &:focus,
   &:hover {
-      background: darken(#FC6E51,7%);
+      background: darken(white,7%);
   }
   &:active {
     &:after {
@@ -136,7 +136,7 @@ header {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1145px) {
   header {
     position: relative;
   }
