@@ -2,3 +2,10 @@
 @import "banner";
 @import "concept";
 @import "news";
+@import"staff";
+
+@media(max-width:992px){
+    .container{
+        max-width: 960px!important;
+    }
+}

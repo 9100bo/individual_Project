@@ -9,6 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 header {
   display: flex;
@@ -78,7 +79,7 @@ header {
   height: 45px;
   cursor: pointer;
   &:hover{
-    background-color: black;
+    background-color: darken(white,7%);
   }
   &:focus{
     outline:none;

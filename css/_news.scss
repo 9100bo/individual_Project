@@ -1,6 +1,26 @@
+body{
+  box-sizing: border-box;
+}
 #news{
     width: 100%;
     min-height: 300px;
     background-color:teal;
-    padding:50px 50px;
-  }
+    padding:50px 20px;
+    box-sizing: border-box;
+    .news_group{
+      // width: 450px;
+      // height: 300px
+      padding:0;
+      background-color: thistle;
+      .image{
+        width: 100%;
+        height: 250px;
+        background-color: sandybrown;
+      }
+      .info{
+        // width: 380px;
+        background-color: slateblue;
+      }
+    }
+
+}
