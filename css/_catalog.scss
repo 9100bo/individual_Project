@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0
+}
+
+.item {
+    width: 500px;
+    /* height: 300px; */
+}
+
+
+.carousel {
+    // margin-top: 100px;
+    padding:20px 0;
+    background-color:papayawhip;
+}
+
+.carousel .slick-slide {
+    transform: scale(.8, .8);
+    transition: ease .3s;
+    filter: blur(2px)
+}
+
+.carousel .slick-slide.slick-center {
+    transform: scale(1, 1);
+    filter: none
+}
+
+.arrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
+
+.arrows i {
+    font-size: 2em;
+    margin: 10px;
+    cursor: pointer
+}

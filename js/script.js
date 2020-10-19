@@ -23,3 +23,5 @@ horizontalAccordions.each((index, element) => {
   	$(element).parent().find("[data-toggle='collapse']").addClass("collapsed");
   });
 });
+
+/* Catalog */

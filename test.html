@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0
+    }
+
+    .item {
+        width: 500px;
+        /* height: 300px; */
+    }
+
+   
+    .carousel {
+        margin-top: 100px;
+        padding:20px 0;
+        background-color:papayawhip;
+    }
+
+    .carousel .slick-slide {
+        transform: scale(.8, .8);
+        transition: ease .3s;
+        filter: blur(2px)
+    }
+
+    .carousel .slick-slide.slick-center {
+        transform: scale(1, 1);
+        filter: none
+    }
+
+    .arrows {
+        width: 100%;
+        display: flex;
+        justify-content: space-around
+    }
+
+    .arrows i {
+        font-size: 2em;
+        margin: 10px;
+        cursor: pointer
+    }
+</style>
+
+<body>
+
+    <div class="carousel">
+        <div class="item ">
+            <img src="./img/11.jpg" alt="">
+        </div>
+        <div class="item ">
+            <img src="./img/22.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="./img/33.jpg" alt="">
+        </div>
+        <div class="item ">
+            <img src="./img/44.jpg" alt="">
+        </div>
+        <div class="item ">
+            <img src="./img/55.jpg" alt="">
+        </div>
+        <div class="item ">
+            <img src="./img/66.jpg" alt="">
+        </div>
+    </div>
+    <div class="arrows">
+        <i class="fas fa-chevron-left" id="arrow-prev"></i>
+        <i class="fas fa-chevron-right" id="arrow-next"></i>
+    </div>
+        
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    
+    <script>
+
+        $('.carousel').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            focusOnSelect: true,
+            centerMode: true,
+            dots: true,
+            prevArrow: $('.fa-chevron-left'),
+            nextArrow: $('.fa-chevron-right'),
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1120,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        })
+
+    </script>
+
+
+
+</body>
+
+
+</html>

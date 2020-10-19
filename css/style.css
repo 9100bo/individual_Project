@@ -192,12 +192,12 @@ body {
   padding: 0;
 }
 
-.swiper-container {
+#banner .swiper-container {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+#banner .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -260,6 +260,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 400px !important;
 }
 
 .accordion.width .card {
@@ -295,9 +296,115 @@ body {
   width: 0;
 }
 
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.item {
+  width: 500px;
+  /* height: 300px; */
+}
+
+.carousel {
+  padding: 20px 0;
+  background-color: papayawhip;
+}
+
+.carousel .slick-slide {
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.carousel .slick-slide.slick-center {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-filter: none;
+          filter: none;
+}
+
+.arrows {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.arrows i {
+  font-size: 2em;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  width: 100%;
+  min-height: 500px;
+  background-color: steelblue;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.menu .menu_l {
+  background-color: tomato;
+}
+
+.menu .menu_r {
+  background-color: seagreen;
+}
+
+.recruit {
+  width: 100%;
+}
+
+.contact {
+  width: 100%;
+  min-height: 500px;
+  background-color: black;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.contact .con_l {
+  background-color: steelblue;
+  padding: 0;
+}
+
+.contact .con_r {
+  background-color: darkslategray;
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: slateblue;
+  text-align: center;
+  line-height: 80px;
+}
+
+.container {
+  padding: 0;
+}
+
 @media (max-width: 992px) {
   .container {
     max-width: 960px !important;
+  }
+  .accordion.width .card .card-header {
+    cursor: pointer;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

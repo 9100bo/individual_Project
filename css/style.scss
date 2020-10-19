@@ -1,11 +1,27 @@
-@import "_nav";
+@import "nav";
 @import "banner";
 @import "concept";
 @import "news";
 @import"staff";
+@import"catalog";
+@import"menu";
+@import"recruit";
+@import"contact";
+@import"footer";
+
+
+.container{
+    padding:0;
+}
 
 @media(max-width:992px){
     .container{
         max-width: 960px!important;
     }
+    .accordion.width .card .card-header {
+        cursor: pointer;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        width: 100px;
+      }
 }

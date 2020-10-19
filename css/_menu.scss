@@ -1,0 +1,13 @@
+.menu{
+    width: 100%;
+    min-height: 500px;
+    background-color: steelblue;
+    padding:0;
+    margin:0 auto;
+    .menu_l{
+        background-color: tomato;
+    }
+    .menu_r{
+         background-color: seagreen;
+    }
+}
